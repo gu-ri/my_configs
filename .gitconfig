@@ -1,0 +1,6 @@
+[alias]
+	cb = rev-parse --abbrev-ref HEAD
+	lol = log --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %an'
+	lof = log --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %an %n' --name-status
+	st = status -sb
+	sw = switch
