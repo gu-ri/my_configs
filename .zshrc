@@ -1,13 +1,15 @@
 bindkey '^P' history-beginning-search-backward
 bindkey '^N' history-beginning-search-forward
 
-alias c="pbcopy"
 alias g="git"
 
 alias ls="ls -FG"
 alias la="ls -A"
 alias ll="ls -ghlo"
 alias lla="ll -A"
+
+alias c="pbcopy"
+alias ql="qlmanage -p"
 
 setopt auto_cd
 setopt prompt_subst
@@ -23,5 +25,6 @@ zstyle ':vcs_info:*' formats "%F{green}%c%u(%b)%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 PROMPT='
-%B%F{cyan}%1~/%f%b $vcs_info_msg_0_ %# '
-RPROMPT='%F{black}%K{cyan} %d %k%f%S %n@%m (%w %T) %s'
+%B%F{cyan}%1~/%f $vcs_info_msg_0_%b %# '
+RPROMPT='%S %T %s%K{cyan}%F{black} %d %f%k'
+

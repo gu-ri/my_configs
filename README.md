@@ -10,7 +10,7 @@ my config files
 `~/.zshrc` に以下を追加
 
 ```zsh
-[[ -f ~/.zshrc.local ]] && source ~/my/.zshrc
+[[ -f ~/my/.zshrc ]] && source ~/my/.zshrc
 ```
 
 ## gitconfig
