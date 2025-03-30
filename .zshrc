@@ -15,9 +15,11 @@ setopt auto_cd
 setopt prompt_subst
 
 autoload -Uz compinit && compinit
-autoload -Uz colors && colors
-autoload -Uz vcs_info
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+autoload -Uz colors && colors
+
+autoload -Uz vcs_info
 zstyle ':vcs_info:git:*' check-for-changes true
 zstyle ':vcs_info:git:*' stagedstr "%F{magenta}!"
 zstyle ':vcs_info:git:*' unstagedstr "%F{yellow}+"
@@ -27,4 +29,3 @@ precmd () { vcs_info }
 PROMPT='
 %B%F{cyan}%1~/%f $vcs_info_msg_0_%b %# '
 RPROMPT='%S %T %s%K{cyan}%F{black} %d %f%k'
-
