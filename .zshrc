@@ -1,6 +1,7 @@
 bindkey '^P' history-beginning-search-backward
 bindkey '^N' history-beginning-search-forward
 
+alias zource="source ~/.zshrc"
 alias g="git"
 
 alias ls="ls -FG"
@@ -10,6 +11,7 @@ alias lla="ll -A"
 
 alias c="pbcopy"
 alias ql="qlmanage -p"
+alias op="open"
 
 setopt auto_cd
 setopt prompt_subst
