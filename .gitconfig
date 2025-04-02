@@ -1,6 +1,10 @@
 [alias]
 	cb = rev-parse --abbrev-ref HEAD
-	lol = log --all --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %an'
-	lof = log --all --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %an %n' --name-status
+	f = fetch
+	lf = log --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %an %n' --name-status
+	lfa = log --all --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %an %n' --name-status
+	ll = log --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %an'
+	lla = log --all --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %an'
+	p = pull
 	st = status -sb
 	sw = switch
