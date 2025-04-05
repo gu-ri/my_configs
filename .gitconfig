@@ -8,3 +8,7 @@
 	p = pull
 	st = status -sb
 	sw = switch
+[blanch]
+	sort = -commiterdate
+[column]
+	ui = auto
