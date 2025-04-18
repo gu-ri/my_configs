@@ -1,10 +1,10 @@
 [alias]
 	cb = rev-parse --abbrev-ref HEAD
 	f = fetch
-	lf = log --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %an %n' --name-status
-	lfa = log --all --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %an %n' --name-status
-	ll = log --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %an'
-	lla = log --all --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %an'
+	lf = log --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %Cblue%an %n' --name-status
+	lfa = log --all --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %Cblue%an %n' --name-status
+	ll = log --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %Cblue%an'
+	lla = log --all --graph --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%h %d %s %Cgreen%ad %Cblue%an'
 	p = pull
 	st = status -sb
 	sw = switch
